@@ -7,9 +7,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FavPhotosComponent implements OnInit {
   photosTitle = 'Photos';
-  image1 = 'https://www.launchcode.org/assets/icons/target-00c7a0bc7776901e3c5cdc4c36c465f19e41a249bc7267a595f0bfa14ab944b7.png';
-  image2 = 'src/assets/Images/Glacier_National_Park_Wild_Goose_lsland.JPG';
-  image3 = '';
+  image1 = '../assets/Images/Glacier_National_Park_Many_Glacier.jpg';
+  image2 = '../assets/Images/Glacier_National_Park_Wild_Goose_lsland.JPG';
+  image3 = '../assets/Images/Glacier_National_Park_Bighorn_Sheep.JPG';
 
   constructor() { }
 

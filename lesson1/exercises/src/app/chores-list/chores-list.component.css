@@ -1,10 +1,13 @@
 .chores {
     font-size: 1.25vw;
     color: fuchsia;
+    border-style: ridge;
+    border-color: fuchsia;
 }
 
 h3 {
     text-decoration: underline;
+    text-align: center;
 }
 
 li {

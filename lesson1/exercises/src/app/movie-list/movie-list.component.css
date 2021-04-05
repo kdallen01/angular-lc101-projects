@@ -1,6 +1,8 @@
 .movies {
     color: green;
-    font-size: 1.25vw
+    font-size: 1.25vw;
+    border-style: solid;
+    border-color: green;
 }
 
 h3 {

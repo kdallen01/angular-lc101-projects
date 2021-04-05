@@ -1,0 +1,10 @@
+hr {
+    width: 100%;
+    text-align: left;
+    margin-left: 0;
+    border-color: black;
+}
+
+body {
+    background-color: skyblue
+}
