@@ -27,9 +27,10 @@
         <div class="crew col-3">
             <h2>Selected Crew</h2>
             <ul>
-                <li>{{crew.name}}</li>
+                <li *ngFor = "let member of crew">{{member.name}}</li>
             </ul>
             <!-- Add a "Clear Crew List" button here. -->
+            <button (click)="crew=[]" *ngIf = "crew.length !== 0">Clear Crew List</button>
         </div>
     </div>
     <hr>
