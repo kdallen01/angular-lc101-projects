@@ -23,23 +23,27 @@ export class AppComponent {
     }
   }
 
-  landing() {
+  landing(image) {
     let result = window.confirm('Are you sure the shuttle is ready for landing?');
     if (result) {
       this.color = this.color;
       this.height = this.height;
       this.width = this.width;
-      this.message = "Space shuttle ready for takeoff!"
+      this.message = "Space shuttle ready for takeoff!";
+      image.style.bottom = '0px;'
+      image.style.left = '0px';
     }
   }
 
-  abort() {
+  abort(image) {
     let result = window.confirm('Are you sure the mission should be aborted?');
     if (result) {
       this.color = this.color;
       this.height = this.height;
       this.width = this.width;
       this.message = "Space shuttle ready for takeoff!";
+      image.style.left = '0px';
+      image.style.bottom = '0px;'
     }
   }
   
@@ -53,12 +57,12 @@ export class AppComponent {
       image.style.left = movement;
       this.width = this.width - 10000;
     } else if(direction === 'up') {
-      let movement = parseInt(image.style.up) - 10 + 'px';
-      image.style.up = movement;
+      let movement = parseInt(image.style.bottom) + 10 + 'px';
+      image.style.bottom = movement;
       this.height = this.height + 10000;
     } else if(direction === 'down') {
-      let movement = parseInt(image.style.up) + 10 + 'px';
-      image.style.up = movement;
+      let movement = parseInt(image.style.bottom) - 10 + 'px';
+      image.style.bottom = movement;
       this.height = this.height - 10000;
     }
   }
